@@ -1,13 +1,15 @@
-**Note from Imomin's Version:**
+
 
 CustomTShirt
 ============
 
 Simple Custom t-shirt editor using Fabric.js. 
 Forked from: http://tshirts.imomin.com/
-
-
 The MIT License (MIT)
+
+
+
+
 
 **What's Different from Imomin's Version?**
 
