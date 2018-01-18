@@ -9,7 +9,9 @@ Forked from: http://tshirts.imomin.com/
 
 The MIT License (MIT)
 
+Demo:
 
+![demo gif](https://raw.githubusercontent.com/luciferreeves/CustomTShirt/master/demo.gif)
 
 
 
