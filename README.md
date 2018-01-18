@@ -15,4 +15,6 @@ There are changes made in the **index.html** file.
 
 This script now only works for Customizing T-Shirts and not Phone Cases.
 
-Demo: 
+**For Some Reasons This Code is not working from Github Pages but works Locally.
+
+**To Use this code please clone the repository ot download the .zip file
