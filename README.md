@@ -1,31 +1,18 @@
+**Note from Imomin's Version:**
+
 CustomTShirt
 ============
 
 Simple Custom t-shirt editor using Fabric.js. 
-demo: http://tshirts.imomin.com/
+Forked from: http://tshirts.imomin.com/
 
 
 The MIT License (MIT)
 
-Copyright (c) 2013 imomin
+**What's Different from Imomin's Version?**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+There are changes made in the **index.html** file.
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+This script now only works for Customizing T-Shirts and not Phone Cases.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-NOTE:
-If I accidentally come across your website and ask you about the editor please give me some credit and don't lie claming somebody else's work as yours.
+Demo: 
