@@ -208,52 +208,22 @@ var line4;
 	        canvas.renderAll();
 	      }
 	    });	  
-		$('#text-bgcolor').miniColors({
-			change: function(hex, rgb) {
-			  var activeObject = canvas.getActiveObject();
-		      if (activeObject && activeObject.type === 'text') {
-		    	  activeObject.backgroundColor = this.value;
-		        canvas.renderAll();
-		      }
-			},
-			open: function(hex, rgb) {
-				//
-			},
-			close: function(hex, rgb) {
-				//
+
+			document.getElementById("text-fontcolor").onchange = function() {
+			var activeObject = canvas.getActiveObject();
+			if (activeObject && activeObject.type === 'text') {
+				activeObject.fill = this.value;
+				canvas.renderAll();
 			}
-		});		
-		$('#text-fontcolor').miniColors({
-			change: function(hex, rgb) {
-			  var activeObject = canvas.getActiveObject();
-		      if (activeObject && activeObject.type === 'text') {
-		    	  activeObject.fill = this.value;
-		    	  canvas.renderAll();
-		      }
-			},
-			open: function(hex, rgb) {
-				//
-			},
-			close: function(hex, rgb) {
-				//
+		};
+
+		document.getElementById("text-strokecolor").onchange = function() {
+			var activeObject = canvas.getActiveObject();
+			if (activeObject && activeObject.type === 'text') {
+				activeObject.strokeStyle = this.value;
+				canvas.renderAll();
 			}
-		});
-		
-		$('#text-strokecolor').miniColors({
-			change: function(hex, rgb) {
-			  var activeObject = canvas.getActiveObject();
-		      if (activeObject && activeObject.type === 'text') {
-		    	  activeObject.strokeStyle = this.value;
-		    	  canvas.renderAll();
-		      }
-			},
-			open: function(hex, rgb) {
-				//
-			},
-			close: function(hex, rgb) {
-				//
-			}
-		});
+		};
 	
 		//canvas.add(new fabric.fabric.Object({hasBorders:true,hasControls:false,hasRotatingPoint:false,selectable:false,type:'rect'}));
 	   document.getElementById("drawingArea").addEventListener("onmouseover", 
@@ -270,14 +240,11 @@ var line4;
 		         canvas.remove(line4);
 		         canvas.renderAll();
 	        }
-	    );
-		 var colors = document.getElementsByClassName("color-preview");
-		 for (let color of colors) {
-			 color.onclick = function(){
-				var color = this.style.backgroundColor;
-				document.getElementById("shirtDiv").style.backgroundColor = color;		   
-			}
-		 }
+			);
+			var colorPicker = document.getElementById("color-picker");
+			colorPicker.onchange = function() {
+				document.getElementById("shirtDiv").style.backgroundColor = this.value;
+			};
 		 
 		 document.getElementById("flip").onclick = 
 		   function() {			   
@@ -333,8 +300,8 @@ var line4;
 				var textEditor = document.getElementById("texteditor");
 				textEditor.style.display = "block";
 	    	document.getElementById("text-string").value = selectedObject.getText();
-	    	$('#text-fontcolor').miniColors('value',selectedObject.fill);
-	    	$('#text-strokecolor').miniColors('value',selectedObject.strokeStyle);	
+	    	document.getElementById("text-fontcolor").value = selectedObject.fill;
+	    	document.getElementById("text-strokecolor").value = selectedObject.strokeStyle;	
 				var imageEditor = document.getElementById("imageeditor");
 				imageEditor.style.display = "block";
 	    }
