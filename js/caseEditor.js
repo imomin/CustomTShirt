@@ -81,7 +81,7 @@ var line4;
 	  	});
 	  	
 	  	$("#phoneTypes").change(function(e){
-	  		debugger;
+	  		// debugger;
 	  		if($(this).val() == "1"){
 	  			$("#phoneDiv").css('height','590');
 	  			$("#phone")[0].src = "img/phones/iphone5A.png";
